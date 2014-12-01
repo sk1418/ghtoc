@@ -28,7 +28,7 @@ def generate_toc(lines):
 def tr_header(header):
     global lnk_temp
     lvl, txt = re.findall(r'^(\d+) (.*)', header)[0]
-    return lnk_temp%((int(lvl)-top_level)*'\t', txt, re.sub(' ','-',re.sub('[^-a-z ]','',txt.lower())))
+    return lnk_temp%((int(lvl)-top_level)*'    ', txt, re.sub(' ','-',re.sub('[^-a-z0-9 ]','',txt.lower())))
 
 if __name__ == '__main__':
     generate_toc(load_md_file('test/test.md'))
