@@ -28,7 +28,6 @@
 #OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 #####################################################
 
-<`0`>
 import re
 import sys
 import shutil,datetime
