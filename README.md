@@ -40,6 +40,8 @@ GitHub doesn't provide a `[[toc]]` like function to generate toc(Table of conten
 
 	toc.py <md file>
 
+then open the `<md file>` and check if you are satisfied with the generated toc 
+
 ##License
 
 MIT license
