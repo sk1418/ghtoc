@@ -59,5 +59,5 @@ MIT license
 ##### Here I test: `"([<&>]) and *$#+"`
 ### OK, that's it
 
-% vim: nofoldenable ts=2 sw=2
+% vim: nofoldenable
 
