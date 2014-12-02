@@ -1,4 +1,5 @@
 ghtoc readme file
+
 			  __    __            
 	   ____ _/ /_  / /_____  _____
 	  / __ `/ __ \/ __/ __ \/ ___/
@@ -25,11 +26,11 @@ ghtoc readme file
 
 ##Introduction
 
-GitHub doesn't provide a `[[toc]]` like function to generate toc(Table of contents) for markdown file. But sometimes an outline of a long readme file or other markdown page is very helpful. That's why does the simple *ghtoc* come.
+GitHub doesn't provide a `[[toc]]` like function to generate toc(Table of contents) for markdown file. But sometimes an outline of a long readme file or other markdown page is very helpful. That's why does the simple **ghtoc** come.
 
 **ghtoc** was written and tested with `python 2.7.8`
 
-##Features & Limitition
+##Features & Limitation
 
 - auto backup the input file before toc was generated and inserted
 - currently only support convert `##Section` into toc. 
