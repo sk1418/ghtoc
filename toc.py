@@ -57,7 +57,7 @@ def generate_toc(fname):
         f.write(TOC+'\n')
         f.write(REF+'\n')
         f.write('\n'.join(headers) + '\n')
-        f.write(''.join(lines))
+        f.write(''.join(lines) + '\n')
 
 
 def tr_header(header):
