@@ -46,7 +46,7 @@ def generate_toc(fname):
     destf= '.'.join((fname,ts,'bak'))
     shutil.copy(fname, destf)
     print "Backup was created: [%s]"%destf
-    headers = [e.strip() for e in lines if re.match(r'#+', e)]
+    headers = [e.rstrip() for e in lines if re.match(r'#+', e)]
     #find top_level
     for i,h in enumerate(headers):
         ln = len(re.search(r'^#+',h).group(0))
@@ -64,7 +64,8 @@ def generate_toc(fname):
 def tr_header(header):
     global lnk_temp
     lvl, txt = re.findall(r'^(\d+) (.*)', header)[0]
-    return lnk_temp%((int(lvl)-top_level)*'    ', txt, re.sub(' ','-',re.sub('[^-a-z0-9 ]','',txt.lower())))
+    # return lnk_temp%((int(lvl)-top_level)*'    ', txt, re.sub(' ','-',re.sub('[^-a-z0-9 ]','',txt.lower())))
+    return lnk_temp%((int(lvl)-top_level)*'    ', txt, re.sub(' ','-',txt))
 
 if __name__ == '__main__':
     if len(sys.argv)<2:
